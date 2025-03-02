@@ -13,7 +13,7 @@ const Timeline = () => {
           className="vertical-timeline-element--education"
           date="Feb 2022 - May 2022"
           contentStyle={{ background: "#ffff", color: "#333" }}
-          contentArrowStyle={{ borderRight: "7px solid  #ffff" }}
+          contentArrowStyle={{ borderRight: "7px solid  #212529" }}
           iconStyle={{ background: "#FC882F", color: "#fff" }}
           icon={
             <svg
@@ -50,7 +50,7 @@ const Timeline = () => {
           className="vertical-timeline-element--work"
           date="Jul 2023 - Now"
           contentStyle={{ background: "#ffff", color: "#333" }}
-          contentArrowStyle={{ borderRight: "7px solid  #ffff" }}
+          contentArrowStyle={{ borderRight: "7px solid  #212529" }}
           iconStyle={{ background: "#FC882F", color: "#fff" }}
           icon={
             <svg
@@ -86,7 +86,7 @@ const Timeline = () => {
           className="vertical-timeline-element--work"
           date="Sep 2024 - Feb 2025"
           contentStyle={{ background: "#ffff", color: "#333" }}
-          contentArrowStyle={{ borderRight: "7px solid  #ffff" }}
+          contentArrowStyle={{ borderRight: "7px solid  #212529" }}
           iconStyle={{ background: "#FC882F", color: "#fff" }}
           icon={
             <svg
@@ -120,7 +120,7 @@ const Timeline = () => {
           className="vertical-timeline-element--work"
           date="March 2025 - Now"
           contentStyle={{ background: "#ffff", color: "#333" }}
-          contentArrowStyle={{ borderRight: "7px solid  #ffff" }}
+          contentArrowStyle={{ borderRight: "7px solid  #212529" }}
           iconStyle={{ background: "#FC882F", color: "#fff" }}
           icon={
             <svg
@@ -154,7 +154,7 @@ const Timeline = () => {
           className="vertical-timeline-element--work"
           date="March 2025 - Now"
           contentStyle={{ background: "#ffff", color: "#333" }}
-          contentArrowStyle={{ borderRight: "7px solid  #ffff" }}
+          contentArrowStyle={{ borderRight: "7px solid  #212529" }}
           iconStyle={{ background: "#FC882F", color: "#fff" }}
           icon={
             <svg
