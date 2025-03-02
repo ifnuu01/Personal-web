@@ -5,7 +5,7 @@ import Footer from "../components/Footer";
 function Layout({ children }) {
   return (
     <>
-      <div className="flex flex-col bg-custom-bg bg-cover bg-center">
+      <div className="flex flex-col bg-custom-bg bg-cover bg-center h-full">
         <Header />
         {children}
         <Footer />
