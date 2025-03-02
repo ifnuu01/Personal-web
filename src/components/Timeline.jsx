@@ -10,7 +10,7 @@ const Timeline = () => {
       <VerticalTimeline>
         {/* 🎓 Pendidikan */}
         <VerticalTimelineElement
-          className="vertical-timeline-element--education"
+          className="vertical-timeline-element--education overflow-x-hidden"
           date="Feb 2022 - May 2022"
           contentStyle={{ background: "#ffff", color: "#333" }}
           contentArrowStyle={{ borderRight: "7px solid  #212529" }}
@@ -47,7 +47,7 @@ const Timeline = () => {
 
         {/* 💼 Pekerjaan 1 */}
         <VerticalTimelineElement
-          className="vertical-timeline-element--work"
+          className="vertical-timeline-element--work overflow-x-hidden"
           date="Jul 2023 - Now"
           contentStyle={{ background: "#ffff", color: "#333" }}
           contentArrowStyle={{ borderRight: "7px solid  #212529" }}
@@ -83,7 +83,7 @@ const Timeline = () => {
 
         {/* 🏢 Pekerjaan 2 */}
         <VerticalTimelineElement
-          className="vertical-timeline-element--work"
+          className="vertical-timeline-element--work overflow-x-hidden"
           date="Sep 2024 - Feb 2025"
           contentStyle={{ background: "#ffff", color: "#333" }}
           contentArrowStyle={{ borderRight: "7px solid  #212529" }}
@@ -117,7 +117,7 @@ const Timeline = () => {
           </p>
         </VerticalTimelineElement>
         <VerticalTimelineElement
-          className="vertical-timeline-element--work"
+          className="vertical-timeline-element--work overflow-x-hidden"
           date="March 2025 - Now"
           contentStyle={{ background: "#ffff", color: "#333" }}
           contentArrowStyle={{ borderRight: "7px solid  #212529" }}
@@ -151,7 +151,7 @@ const Timeline = () => {
           </p>
         </VerticalTimelineElement>
         <VerticalTimelineElement
-          className="vertical-timeline-element--work"
+          className="vertical-timeline-element--work overflow-x-hidden"
           date="March 2025 - Now"
           contentStyle={{ background: "#ffff", color: "#333" }}
           contentArrowStyle={{ borderRight: "7px solid  #212529" }}

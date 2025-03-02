@@ -5,9 +5,3 @@
 .vertical-timeline::before {
   background: #212529 !important;
 }
-
-.timeline-container {
-  display: flex;
-  overflow-x: auto;
-  max-width: 100vw;
-}
