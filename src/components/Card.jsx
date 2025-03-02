@@ -60,7 +60,7 @@ function Card() {
           <div className="bg-white shadow-lg rounded-3xl w-full p-2">
             <img
               src={data.imageSrc}
-              className="rounded-2xl shadow-inner"
+              className="rounded-2xl shadow-inner h-40 w-full object-cover"
               alt=""
             />
           </div>
