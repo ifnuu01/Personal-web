@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile Card</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="flex justify-center items-center min-h-screen bg-gray-100">
+    <!-- Card -->
+    <div class="relative bg-white rounded-3xl shadow-lg p-6 w-80 text-center">
+        <!-- Avatar (Floating Effect) -->
+        <div class="absolute -top-14 left-1/2 transform -translate-x-1/2 w-24 h-24 bg-gray-100 rounded-2xl z-10 flex justify-center items-center">
+            <div class="bg-slate-800 w-20 h-20 rounded-2xl"></div>
+            
+        </div>
+
+        <!-- Nama & Username -->
+        <div class="mt-16">
+            <h2 class="text-lg font-semibold text-gray-900">Ifnu Umar</h2>
+            <p class="text-gray-500">@ifnuu01</p>
+        </div>
+
+        <!-- Social Media Icons -->
+        <div class="flex justify-center gap-4 mt-4">
+            <a href="#" class="bg-white shadow-md p-2 rounded-xl">
+                <img src="https://cdn-icons-png.flaticon.com/512/174/174857.png" class="w-6 h-6" />
+            </a>
+            <a href="#" class="bg-white shadow-md p-2 rounded-xl">
+                <img src="https://cdn-icons-png.flaticon.com/512/5968/5968764.png" class="w-6 h-6" />
+            </a>
+            <a href="#" class="bg-white shadow-md p-2 rounded-xl">
+                <img src="https://cdn-icons-png.flaticon.com/512/733/733609.png" class="w-6 h-6" />
+            </a>
+            <a href="#" class="bg-white shadow-md p-2 rounded-xl">
+                <img src="https://cdn-icons-png.flaticon.com/512/2111/2111463.png" class="w-6 h-6" />
+            </a>
+        </div>
+
+        <!-- Menu Navigation -->
+        <div class="flex justify-between mt-6 text-gray-600">
+            <div class="flex items-center space-x-1">
+                <span>👋</span>
+                <span class="text-sm font-medium text-yellow-500">About</span>
+            </div>
+            <div class="flex items-center space-x-1">
+                <span>🛠️</span>
+                <span class="text-sm">Projects</span>
+            </div>
+            <div class="flex items-center space-x-1">
+                <span>💻</span>
+                <span class="text-sm">Tech Stack</span>
+            </div>
+            <div class="flex items-center space-x-1">
+                <span>📄</span>
+                <span class="text-sm">Resume</span>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

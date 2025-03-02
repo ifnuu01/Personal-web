@@ -1,0 +1,7 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.vertical-timeline::before {
+  background: #212529 !important;
+}
