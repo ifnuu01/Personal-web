@@ -11,7 +11,7 @@ import Tailwindcss from "../../public/tailwind.svg";
 function Card() {
   const cardData = [
     {
-      imageSrc: "/public/issue-sedunia.png",
+      imageSrc: "/issue-sedunia.png",
       title: "Issue Sedunia",
       linkIcon: "🔗",
       techIcons: [
@@ -22,7 +22,7 @@ function Card() {
       ],
     },
     {
-      imageSrc: "/public/pet-heaven.png",
+      imageSrc: "/pet-heaven.png",
       title: "Pet Heaven",
       linkIcon: "🔗",
       techIcons: [
@@ -33,7 +33,7 @@ function Card() {
       ],
     },
     {
-      imageSrc: "/public/tomato-detection.png",
+      imageSrc: "/tomato-detection.png",
       title: "Tomato Detection",
       linkIcon: "🔗",
       techIcons: [
@@ -42,7 +42,7 @@ function Card() {
       ],
     },
     {
-      imageSrc: "/public/Porto-v1.png",
+      imageSrc: "/Porto-v1.png",
       title: "Porto v1",
       linkIcon: "🔗",
       techIcons: [
