@@ -10,7 +10,7 @@ function Footer() {
           </p>
           <div className="mt-2">
             <a
-              href="https://github.com/ifnuumar"
+              href="https://github.com/ifnuu01"
               target="_blank"
               rel="noopener noreferrer"
               className="text-blue-400 hover:text-blue-500 mx-2"
@@ -18,7 +18,7 @@ function Footer() {
               GitHub
             </a>
             <a
-              href="https://www.linkedin.com/in/ifnuumar"
+              href="https://www.linkedin.com/in/ifnu-umar-03859930a/"
               target="_blank"
               rel="noopener noreferrer"
               className="text-blue-400 hover:text-blue-500 mx-2"

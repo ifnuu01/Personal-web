@@ -20,7 +20,8 @@ const Header = () => {
 
         <div className="flex justify-center gap-4 mt-4">
           <a
-            href="#"
+            href="https://www.linkedin.com/in/ifnu-umar-03859930a/"
+            target="_blank"
             className="bg-white shadow-md p-2 rounded-xl cursor-pointer hover:scale-110 transition-transform duration-300 ease-in-out"
           >
             <img
@@ -29,7 +30,8 @@ const Header = () => {
             />
           </a>
           <a
-            href="#"
+            href="https://www.facebook.com/ifnu.ifnu.756859/"
+            target="_blank"
             className="bg-white shadow-md p-2 rounded-xl cursor-pointer hover:scale-110 transition-transform duration-300 ease-in-out"
           >
             <img
@@ -38,7 +40,8 @@ const Header = () => {
             />
           </a>
           <a
-            href="#"
+            href="https://github.com/ifnuu01"
+            target="_blank"
             className="bg-white shadow-md p-2 rounded-xl cursor-pointer hover:scale-110 transition-transform duration-300 ease-in-out"
           >
             <img
@@ -47,7 +50,8 @@ const Header = () => {
             />
           </a>
           <a
-            href="#"
+            href="https://www.instagram.com/ifnu_mr/"
+            target="_blank"
             className="bg-white shadow-md p-2 rounded-xl cursor-pointer hover:scale-110 transition-transform duration-300 ease-in-out"
           >
             <img

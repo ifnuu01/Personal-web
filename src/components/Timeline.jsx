@@ -12,7 +12,10 @@ const Timeline = () => {
         <VerticalTimelineElement
           className="vertical-timeline-element--education overflow-x-hidden"
           date="Feb 2022 - May 2022"
-          contentStyle={{ background: "#ffff", color: "#333" }}
+          contentStyle={{
+            background: "#ffff",
+            color: "#333",
+          }}
           contentArrowStyle={{ borderRight: "7px solid  #212529" }}
           iconStyle={{ background: "#FC882F", color: "#fff" }}
           icon={
