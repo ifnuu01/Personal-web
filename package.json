@@ -10,9 +10,11 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "framer-motion": "^12.4.7",
     "prop-types": "^15.8.1",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
+    "react-loading-skeleton": "^3.5.0",
     "react-router-dom": "^7.2.0",
     "react-typewriter-effect": "^1.1.0",
     "react-vertical-timeline-component": "^3.5.3",
