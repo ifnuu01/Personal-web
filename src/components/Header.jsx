@@ -1,6 +1,7 @@
 import React from "react";
 import foto from "../../public/ifnu.jpg";
 import { Link, useLocation } from "react-router-dom";
+import { motion } from "framer-motion";
 
 const Header = () => {
   const location = useLocation();
@@ -19,46 +20,62 @@ const Header = () => {
         </div>
 
         <div className="flex justify-center gap-4 mt-4">
-          <a
+          <motion.a
             href="https://www.linkedin.com/in/ifnu-umar-03859930a/"
             target="_blank"
-            className="bg-white shadow-md p-2 rounded-xl cursor-pointer hover:scale-110 transition-transform duration-300 ease-in-out"
+            className="bg-white shadow-md p-2 rounded-xl cursor-pointer"
+            initial={{ opacity: 0, scale: 0.5, y: 20 }}
+            whileInView={{ opacity: 1, scale: 1, y: 0 }}
+            transition={{ duration: 0.9 }}
+            viewport={{ once: true, amount: 0.3 }}
           >
             <img
               src="https://cdn-icons-png.flaticon.com/512/174/174857.png"
               className="w-6 h-6"
             />
-          </a>
-          <a
+          </motion.a>
+          <motion.a
             href="https://www.facebook.com/ifnu.ifnu.756859/"
             target="_blank"
-            className="bg-white shadow-md p-2 rounded-xl cursor-pointer hover:scale-110 transition-transform duration-300 ease-in-out"
+            className="bg-white shadow-md p-2 rounded-xl cursor-pointer"
+            initial={{ opacity: 0, scale: 0.5, y: 20 }}
+            whileInView={{ opacity: 1, scale: 1, y: 0 }}
+            transition={{ duration: 0.9 }}
+            viewport={{ once: true, amount: 0.3 }}
           >
             <img
               src="https://cdn-icons-png.flaticon.com/512/5968/5968764.png"
               className="w-6 h-6"
             />
-          </a>
-          <a
+          </motion.a>
+          <motion.a
             href="https://github.com/ifnuu01"
             target="_blank"
-            className="bg-white shadow-md p-2 rounded-xl cursor-pointer hover:scale-110 transition-transform duration-300 ease-in-out"
+            className="bg-white shadow-md p-2 rounded-xl cursor-pointer"
+            initial={{ opacity: 0, scale: 0.5, y: 20 }}
+            whileInView={{ opacity: 1, scale: 1, y: 0 }}
+            transition={{ duration: 0.9 }}
+            viewport={{ once: true, amount: 0.3 }}
           >
             <img
               src="https://cdn-icons-png.flaticon.com/512/733/733609.png"
               className="w-6 h-6"
             />
-          </a>
-          <a
+          </motion.a>
+          <motion.a
             href="https://www.instagram.com/ifnu_mr/"
             target="_blank"
-            className="bg-white shadow-md p-2 rounded-xl cursor-pointer hover:scale-110 transition-transform duration-300 ease-in-out"
+            className="bg-white shadow-md p-2 rounded-xl cursor-pointer"
+            initial={{ opacity: 0, scale: 0.5, y: 20 }}
+            whileInView={{ opacity: 1, scale: 1, y: 0 }}
+            transition={{ duration: 0.9 }}
+            viewport={{ once: true, amount: 0.3 }}
           >
             <img
               src="https://cdn-icons-png.flaticon.com/512/2111/2111463.png"
               className="w-6 h-6"
             />
-          </a>
+          </motion.a>
         </div>
 
         <div className="flex justify-between lg:justify-evenly mt-6 text-primary font-semibold">
