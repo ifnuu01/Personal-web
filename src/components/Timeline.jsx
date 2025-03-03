@@ -8,7 +8,6 @@ const Timeline = () => {
   return (
     <div className="w-full px-5 mt-4 lg:w-[60%] mx-auto">
       <VerticalTimeline>
-        {/* 🎓 Pendidikan */}
         <VerticalTimelineElement
           className="vertical-timeline-element--education overflow-x-hidden"
           date="Feb 2022 - May 2022"
@@ -48,7 +47,6 @@ const Timeline = () => {
           </p>
         </VerticalTimelineElement>
 
-        {/* 💼 Pekerjaan 1 */}
         <VerticalTimelineElement
           className="vertical-timeline-element--work overflow-x-hidden"
           date="Jul 2023 - Now"
@@ -84,7 +82,6 @@ const Timeline = () => {
           </p>
         </VerticalTimelineElement>
 
-        {/* 🏢 Pekerjaan 2 */}
         <VerticalTimelineElement
           className="vertical-timeline-element--work overflow-x-hidden"
           date="Sep 2024 - Feb 2025"
