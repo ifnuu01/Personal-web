@@ -26,6 +26,7 @@ function Card() {
       imageSrc: "/issue-sedunia.png",
       title: "Issue Sedunia",
       linkIcon: "🔗",
+      link: "https://github.com/ifnuu01/issue-sedunia",
       techIcons: [
         { src: HTML, alt: "HTML5" },
         { src: CSS, alt: "CSS3" },
@@ -37,6 +38,7 @@ function Card() {
       imageSrc: "/pet-heaven.png",
       title: "Pet Heaven",
       linkIcon: "🔗",
+      link: "https://pet-heaven.wuaze.com/",
       techIcons: [
         { src: HTML, alt: "HTML5" },
         { src: CSS, alt: "CSS3" },
@@ -45,9 +47,20 @@ function Card() {
       ],
     },
     {
+      imageSrc: "/eazy-ui.png",
+      title: "Eazy UI",
+      linkIcon: "🔗",
+      link: "https://eazy-ui.vercel.app/",
+      techIcons: [
+        { src: Reactjs, alt: "React" },
+        { src: Tailwindcss, alt: "Tailwind CSS" },
+      ],
+    },
+    {
       imageSrc: "/tomato-detection.png",
       title: "Tomato Detection",
       linkIcon: "🔗",
+      link: "https://tomato-ripeness-detection-nvb4bjpbumixgkm5khedea.streamlit.app/",
       techIcons: [
         { src: Python, alt: "Python" },
         { src: Streamlit, alt: "Streamlit" },
@@ -57,6 +70,7 @@ function Card() {
       imageSrc: "/Porto-v1.png",
       title: "Porto v1",
       linkIcon: "🔗",
+      link: "https://github.com/ifnuu01/Porto-v1",
       techIcons: [
         { src: Reactjs, alt: "React" },
         { src: Tailwindcss, alt: "Tailwind CSS" },
@@ -102,7 +116,9 @@ function Card() {
               {isLoading ? (
                 <Skeleton width={20} height={20} />
               ) : (
-                <p>{data.linkIcon}</p>
+                <a href={data.link} target="_blank">
+                  {data.linkIcon}
+                </a>
               )}
             </div>
           </div>
