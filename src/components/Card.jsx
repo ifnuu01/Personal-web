@@ -10,16 +10,10 @@ import Python from "../../public/python.svg";
 import Streamlit from "../../public/streamlit.svg";
 import Reactjs from "../../public/reactjs.svg";
 import Tailwindcss from "../../public/tailwind.svg";
+import Laravel from "../../public/laravel.svg";
 
 function Card() {
   const [isLoading, setIsLoading] = useState(true);
-
-  useEffect(() => {
-    // Simulasi loading data
-    setTimeout(() => {
-      setIsLoading(false);
-    }, 2000);
-  }, []);
 
   const cardData = [
     {
@@ -57,6 +51,26 @@ function Card() {
       ],
     },
     {
+      imageSrc: "/ReFilm.png",
+      title: "ReFilm",
+      linkIcon: "🔗",
+      link: "https://github.com/ifnuu01/Re-Film-v2",
+      techIcons: [
+        { src: Laravel, alt: "Laravel" },
+        { src: Tailwindcss, alt: "Tailwindcss" },
+      ],
+    },
+    {
+      imageSrc: "/Eazy-Job.png",
+      title: "Eazy Job",
+      linkIcon: "🔗",
+      link: "https://sparkling-youtiao-604eee.netlify.app/",
+      techIcons: [
+        { src: Reactjs, alt: "React" },
+        { src: Tailwindcss, alt: "Tailwind CSS" },
+      ],
+    },
+    {
       imageSrc: "/tomato-detection.png",
       title: "Tomato Detection",
       linkIcon: "🔗",
@@ -80,66 +94,57 @@ function Card() {
 
   return (
     <div className="w-full px-5 grid grid-cols-1 gap-4 md:grid-cols-2 lg:px-0 lg:grid-cols-2 lg:w-[40%] mx-auto">
-      {cardData.map((data, index) => (
-        <motion.div
-          key={index}
-          initial={{ opacity: 0, x: 100 }} // Mulai dari kanan
-          animate={{ opacity: 1, x: 0 }} // Muncul dengan efek slide ke kiri
-          transition={{ duration: 0.2, delay: index * 0.2 }} // Efek delay antar kartu
-          className="mt-4"
-        >
-          {/* Image */}
-          <div className="bg-white shadow-lg rounded-3xl w-full p-2">
-            {isLoading ? (
-              <Skeleton height={160} borderRadius={16} />
-            ) : (
+      {cardData.map((data, index) => {
+        const [isImageLoaded, setIsImageLoaded] = useState(false);
+        return (
+          <div
+            key={index}
+            data-aos="zoom-in"
+            data-aos-duration="1000"
+            data-aos-delay="300"
+            className="mt-4"
+          >
+            {/* Image */}
+            <div className="bg-white shadow-lg rounded-3xl w-full p-2">
+              {!isImageLoaded && <Skeleton height={160} borderRadius={16} />}
               <img
                 src={data.imageSrc}
-                className="rounded-2xl shadow-inner h-40 w-full object-cover"
+                className={`rounded-2xl shadow-inner h-40 w-full object-cover ${
+                  isImageLoaded ? "block" : "hidden"
+                }`}
                 alt=""
+                onLoad={() => setIsImageLoaded(true)}
               />
-            )}
-          </div>
+            </div>
 
-          {/* Content */}
-          <div className="flex justify-between items-center mt-2">
-            <div className="bg-white shadow-lg rounded-full rounded-tl-none w-fit p-2">
-              {isLoading ? (
-                <Skeleton width={120} height={20} />
-              ) : (
+            {/* Content */}
+            <div className="flex justify-between items-center mt-2">
+              <div className="bg-white shadow-lg rounded-full rounded-tl-none w-fit p-2">
                 <p className="font-bold text-md drop-shadow-lg cursor-default text-primary">
                   {data.title}
                 </p>
-              )}
-            </div>
-            <div className="bg-white shadow-lg rounded-lg w-fit p-2 cursor-pointer hover:scale-110 transition-transform duration-300 ease-in-out">
-              {isLoading ? (
-                <Skeleton width={20} height={20} />
-              ) : (
+              </div>
+              <div className="bg-white shadow-lg rounded-lg w-fit p-2 cursor-pointer hover:scale-110 transition-transform duration-300 ease-in-out">
                 <a href={data.link} target="_blank">
                   {data.linkIcon}
                 </a>
-              )}
+              </div>
+            </div>
+
+            {/* Tech */}
+            <div className="flex items-center flex-wrap gap-2 mt-2">
+              {data.techIcons.map((icon, i) => (
+                <div
+                  key={i}
+                  className="bg-white shadow-lg rounded-lg rounded-tl-none w-fit p-2"
+                >
+                  <img src={icon.src} alt={icon.alt} className="w-6" />
+                </div>
+              ))}
             </div>
           </div>
-
-          {/* Tech */}
-          <div className="flex items-center flex-wrap gap-2 mt-2">
-            {isLoading
-              ? [...Array(4)].map((_, i) => (
-                  <Skeleton key={i} width={40} height={40} borderRadius={8} />
-                ))
-              : data.techIcons.map((icon, i) => (
-                  <div
-                    key={i}
-                    className="bg-white shadow-lg rounded-lg rounded-tl-none w-fit p-2"
-                  >
-                    <img src={icon.src} alt={icon.alt} className="w-6" />
-                  </div>
-                ))}
-          </div>
-        </motion.div>
-      ))}
+        );
+      })}
     </div>
   );
 }
