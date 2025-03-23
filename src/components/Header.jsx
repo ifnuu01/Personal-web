@@ -5,6 +5,11 @@ import { motion } from "framer-motion";
 
 const Header = () => {
   const location = useLocation();
+
+  const scrollToTop = () => {
+    window.scrollTo({ top: 0, behavior: "smooth" });
+  };
+
   return (
     <>
       <div className="relative bg-white rounded-3xl shadow-lg p-6 w-[100%] lg:w-[40%] text-center mx-auto mt-20 mb-4">
@@ -78,10 +83,11 @@ const Header = () => {
           </motion.a>
         </div>
       </div>
-      <div className="flex justify-between lg:justify-evenly text-primary font-semibold bg-white py-4 px-2 lg:px-2 shadow-lg w-[100%] lg:w-[40%] mx-auto fixed bottom-0 left-0 right-0 z-10 backdrop-blur bg-opacity-60 lg:sticky lg:top-5 lg:py-4 lg:rounded-3xl lg:shadow-2xl">
+      <div className="flex justify-between lg:justify-evenly text-primary font-semibold bg-white py-4 px-2 lg:px-2 shadow-lg w-[100%] lg:w-[40%] mx-auto fixed bottom-0 left-0 right-0 z-10 backdrop-blur bg-opacity-60 lg:static lg:top-5 lg:py-4 lg:rounded-3xl lg:shadow-2xl">
         {/* About */}
         <Link
           to="/"
+          onClick={scrollToTop}
           className="relative flex items-center cursor-pointer group"
         >
           <span className="text-md lg:text-lg">👋 About</span>
@@ -98,6 +104,7 @@ const Header = () => {
         {/* Projects */}
         <Link
           to="/projects"
+          onClick={scrollToTop}
           className="relative flex items-center cursor-pointer group"
         >
           <span className="text-md lg:text-lg">🛠️ Projects</span>
@@ -114,6 +121,7 @@ const Header = () => {
         {/* Resume */}
         <Link
           to="/resume"
+          onClick={scrollToTop}
           className="relative flex items-center cursor-pointer group"
         >
           <span className="text-md lg:text-lg">📄 Resume</span>
