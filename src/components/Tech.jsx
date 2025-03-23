@@ -38,9 +38,9 @@ function Tech() {
           whileInView={{ opacity: 1, scale: 1, y: 0 }}
           transition={{ duration: 0.5, delay: index * 0.1 }}
           viewport={{ once: true, amount: 0.3 }}
-          className="p-2 bg-white rounded-lg shadow-lg w-fit cursor-pointer hover:scale-110 transition-transform duration-300 ease-in-out"
+          className="p-3 bg-white rounded-lg shadow-lg w-fit cursor-pointer hover:scale-110 transition-transform duration-300 ease-in-out"
         >
-          <img src={tech.src} alt={tech.alt} className="w-10" />
+          <img src={tech.src} alt={tech.alt} className="w-8" />
         </motion.div>
       ))}
     </div>

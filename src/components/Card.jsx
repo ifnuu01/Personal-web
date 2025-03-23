@@ -137,7 +137,7 @@ function Card() {
                   key={i}
                   className="bg-white shadow-lg rounded-lg rounded-tl-none w-fit p-2"
                 >
-                  <img src={icon.src} alt={icon.alt} className="w-6" />
+                  <img src={icon.src} alt={icon.alt} className="w-5" />
                 </div>
               ))}
             </div>
