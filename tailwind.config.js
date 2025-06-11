@@ -4,7 +4,7 @@ export default {
   theme: {
     extend: {
       backgroundImage: {
-        'custom-bg': "url('/bg.svg')",
+        'custom-bg': "url('/bg2.svg')",
       },
       colors: {
         'primary': '#212529',
