@@ -33,6 +33,7 @@ const Header = () => {
             whileInView={{ opacity: 1, scale: 1, y: 0 }}
             transition={{ duration: 0.9 }}
             viewport={{ once: true, amount: 0.3 }}
+            nnp
           >
             <img
               src="https://cdn-icons-png.flaticon.com/512/174/174857.png"
@@ -83,7 +84,7 @@ const Header = () => {
           </motion.a>
         </div>
       </div>
-      <div className="flex justify-between lg:justify-evenly text-primary font-semibold bg-white py-4 px-2 lg:px-2 shadow-lg w-[100%] lg:w-[40%] mx-auto fixed bottom-0 left-0 right-0 z-10 backdrop-blur bg-opacity-60 lg:static lg:top-5 lg:py-4 lg:rounded-3xl lg:shadow-2xl">
+      <div className="flex justify-between lg:justify-evenly text-primary font-semibold bg-white py-4 px-8 lg:px-2 shadow-lg w-[100%] lg:w-[40%] mx-auto fixed bottom-0 left-0 right-0 z-10 backdrop-blur bg-opacity-60 lg:static lg:top-5 lg:py-4 lg:rounded-3xl lg:shadow-2xl">
         {/* About */}
         <Link
           to="/"
@@ -120,15 +121,15 @@ const Header = () => {
 
         {/* Resume */}
         <Link
-          to="/resume"
+          to="/blog"
           onClick={scrollToTop}
           className="relative flex items-center cursor-pointer group"
         >
-          <span className="text-md lg:text-lg">📄 Resume</span>
+          <span className="text-md lg:text-lg">📄 Blog</span>
           <span
             className={`absolute bottom-0 top-6 lg:top-8 left-0 w-full h-[2px] bg-[#FC882F] 
                 ${
-                  location.pathname === "/resume"
+                  location.pathname === "/blog"
                     ? "scale-x-100"
                     : "scale-x-0 group-hover:scale-x-100"
                 } transition-transform duration-300 ease-in-out`}
