@@ -1,19 +1,9 @@
 import React, { useState, useEffect } from "react";
 import Skeleton from "react-loading-skeleton";
 import "react-loading-skeleton/dist/skeleton.css";
-import HTML from "../../public/html5.svg";
-import CSS from "../../public/css3.svg";
-import JS from "../../public/js.svg";
-import PHP from "../../public/php.svg";
-import Python from "../../public/python.svg";
-import Streamlit from "../../public/streamlit.svg";
-import Reactjs from "../../public/reactjs.svg";
-import Tailwindcss from "../../public/tailwind.svg";
-import Laravel from "../../public/laravel.svg";
+import { Icon } from "@iconify/react";
 
 function Card() {
-  const [isLoading, setIsLoading] = useState(true);
-
   const cardData = [
     {
       imageSrc: "/issue-sedunia.png",
@@ -21,10 +11,10 @@ function Card() {
       linkIcon: "🔗",
       link: "https://github.com/ifnuu01/issue-sedunia",
       techIcons: [
-        { src: HTML, alt: "HTML5" },
-        { src: CSS, alt: "CSS3" },
-        { src: JS, alt: "JavaScript" },
-        { src: PHP, alt: "PHP" },
+        { src: "vscode-icons:file-type-html", alt: "HTML5" },
+        { src: "devicon:css3", alt: "CSS3" },
+        { src: "vscode-icons:file-type-js-official", alt: "JavaScript" },
+        { src: "devicon:php", alt: "PHP" },
       ],
     },
     {
@@ -33,10 +23,10 @@ function Card() {
       linkIcon: "🔗",
       link: "https://pet-heaven.wuaze.com/",
       techIcons: [
-        { src: HTML, alt: "HTML5" },
-        { src: CSS, alt: "CSS3" },
-        { src: JS, alt: "JavaScript" },
-        { src: PHP, alt: "PHP" },
+        { src: "vscode-icons:file-type-html", alt: "HTML5" },
+        { src: "devicon:css3", alt: "CSS3" },
+        { src: "vscode-icons:file-type-js-official", alt: "JavaScript" },
+        { src: "devicon:php", alt: "PHP" },
       ],
     },
     {
@@ -45,8 +35,8 @@ function Card() {
       linkIcon: "🔗",
       link: "https://eazy-ui.vercel.app/",
       techIcons: [
-        { src: Reactjs, alt: "React" },
-        { src: Tailwindcss, alt: "Tailwind CSS" },
+        { src: "logos:react", alt: "React" },
+        { src: "devicon:tailwindcss", alt: "Tailwind CSS" },
       ],
     },
     {
@@ -55,8 +45,8 @@ function Card() {
       linkIcon: "🔗",
       link: "https://github.com/ifnuu01/Re-Film-v2",
       techIcons: [
-        { src: Laravel, alt: "Laravel" },
-        { src: Tailwindcss, alt: "Tailwindcss" },
+        { src: "devicon:laravel", alt: "Laravel" },
+        { src: "devicon:tailwindcss", alt: "Tailwindcss" },
       ],
     },
     {
@@ -65,8 +55,8 @@ function Card() {
       linkIcon: "🔗",
       link: "https://sparkling-youtiao-604eee.netlify.app/",
       techIcons: [
-        { src: Reactjs, alt: "React" },
-        { src: Tailwindcss, alt: "Tailwind CSS" },
+        { src: "logos:react", alt: "React" },
+        { src: "devicon:tailwindcss", alt: "Tailwind CSS" },
       ],
     },
     {
@@ -75,8 +65,8 @@ function Card() {
       linkIcon: "🔗",
       link: "https://tomato-ripeness-detection-nvb4bjpbumixgkm5khedea.streamlit.app/",
       techIcons: [
-        { src: Python, alt: "Python" },
-        { src: Streamlit, alt: "Streamlit" },
+        { src: "material-icon-theme:python", alt: "Python" },
+        { src: "devicon:streamlit", alt: "Streamlit" },
       ],
     },
     {
@@ -85,8 +75,19 @@ function Card() {
       linkIcon: "🔗",
       link: "https://github.com/ifnuu01/Porto-v1",
       techIcons: [
-        { src: Reactjs, alt: "React" },
-        { src: Tailwindcss, alt: "Tailwind CSS" },
+        { src: "logos:react", alt: "React" },
+        { src: "devicon:tailwindcss", alt: "Tailwind CSS" },
+      ],
+    },
+    {
+      imageSrc: "/Laundry-Notes.png",
+      title: "Laundry Notes",
+      linkIcon: "🔗",
+      link: "https://github.com/ifnuu01/LaundryNotes",
+      techIcons: [
+        { src: "devicon:laravel", alt: "Laravel" },
+        { src: "devicon:tailwindcss", alt: "Tailwind CSS" },
+        { src: "devicon:mysql", alt: "MySQL" },
       ],
     },
   ];
@@ -137,7 +138,7 @@ function Card() {
                   key={i}
                   className="bg-white shadow-lg rounded-lg rounded-tl-none w-fit p-2"
                 >
-                  <img src={icon.src} alt={icon.alt} className="w-5" />
+                  <Icon icon={icon.src} className="text-2xl" alt={icon.alt} />
                 </div>
               ))}
             </div>

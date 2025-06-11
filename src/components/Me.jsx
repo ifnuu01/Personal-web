@@ -26,15 +26,16 @@ function Me() {
         </div>
       ) : (
         <p className="opacity-100 transition-opacity duration-500">
-          Saya saat ini adalah mahasiswa S1 Teknik Informatika di Universitas
-          Mulawarman, dengan minat yang kuat dalam pengembangan perangkat lunak
-          💻, manajemen basis data 🗄️, pengembangan web 🌐, dan sistem jaringan
-          🔗. 🚀 Selama perjalanan akademik saya, saya telah memperoleh
-          pengalaman dalam berbagai bahasa pemrograman 🖋️, framework
-          pengembangan web 🏗️, dan teknik pemecahan masalah 🧩. 🔥 Saya sangat
-          antusias untuk terus belajar 📚 dan menerapkan teknologi baru 🛠️ pada
-          proyek nyata, serta ingin berkolaborasi 🤝 dengan para profesional di
-          industri teknologi untuk mengembangkan kemampuan saya lebih lanjut.
+          I am currently an undergraduate student majoring in Informatics
+          Engineering at Mulawarman University, with a strong interest in
+          software development 💻, database management 🗄️, web development 🌐,
+          and network systems 🔗. 🚀 Throughout my academic journey, I have
+          gained experience in various programming languages 🖋️, web development
+          frameworks 🏗️, and problem-solving techniques 🧩. 🔥 I am highly
+          enthusiastic about continuously learning 📚 and applying new
+          technologies 🛠️ to real-world projects, and I am eager to collaborate
+          🤝 with professionals in the tech industry to further develop my
+          skills.
         </p>
       )}
     </div>
