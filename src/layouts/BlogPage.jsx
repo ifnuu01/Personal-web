@@ -3,7 +3,7 @@ import Layout from "./Layout";
 import Title from "../components/Title";
 import BlogList from "../components/BlogList";
 
-function ResumePage() {
+function BlogPage() {
   return (
     <>
       <Layout>
@@ -14,4 +14,4 @@ function ResumePage() {
   );
 }
 
-export default ResumePage;
+export default BlogPage;
