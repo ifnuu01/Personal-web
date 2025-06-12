@@ -50,7 +50,7 @@ function BlogList() {
               <p className="text-gray-600 mt-2">{post.description}</p>
               <Link
                 to={post.link}
-                className="text-white hover:underline mt-4 flex justify-self-end p-2 bg-blue-300 w-fit rounded-lg"
+                className="text-white hover:underline mt-4 flex justify-self-end p-2 bg-primary w-fit rounded-lg"
               >
                 Baca Selengkapnya
               </Link>
@@ -63,7 +63,7 @@ function BlogList() {
           <button
             onClick={() => setCurrentPage((prev) => Math.max(prev - 1, 1))}
             disabled={currentPage === 1}
-            className="bg-blue-300 text-white px-4 py-2 rounded-lg disabled:opacity-50"
+            className="bg-primary text-white px-4 py-2 rounded-lg disabled:opacity-50"
           >
             Previous
           </button>
@@ -72,7 +72,7 @@ function BlogList() {
               setCurrentPage((prev) => Math.min(prev + 1, totalPage))
             }
             disabled={currentPage === totalPage}
-            className="bg-blue-300 text-white px-4 py-2 rounded-lg disabled:opacity-50"
+            className="bg-primary text-white px-4 py-2 rounded-lg disabled:opacity-50"
           >
             Next
           </button>
