@@ -23,7 +23,11 @@ function BlogDetail() {
     <Layout>
       <div className="w-full px-3 mt-4 flex justify-center items-center flex-col">
         <div className="w-full lg:w-[40%] rounded-lg">
-          {PostComponent ? <PostComponent /> : <div>Tidak ada konten.</div>}
+          {PostComponent ? (
+            <PostComponent title={post.title} date={post.date} />
+          ) : (
+            <div>Tidak ada konten.</div>
+          )}
         </div>
       </div>
     </Layout>

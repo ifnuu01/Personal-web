@@ -2,7 +2,7 @@ import React from "react";
 import Thumbnail from "../../../public/ThumbnailLaravelApi.svg";
 import Code from "../Code";
 
-function PengenalanLaravelApi() {
+function PengenalanLaravelApi(props) {
   return (
     <>
       <img
@@ -12,10 +12,10 @@ function PengenalanLaravelApi() {
       />
       <div className="flex justify-between flex-col lg:flex-row items-start lg:items-center">
         <div className="bg-white rounded-lg px-4 py-2 shadow-lg w-fit mt-4 text-secondary font-bold text-lg">
-          📕 Pengenalan Laravel API
+          📕 {props.title}
         </div>
         <div className="bg-white rounded-lg px-4 py-2 shadow-lg w-fit mt-4 text-primary text-sm">
-          📅 2025-01-02
+          📅 {props.date}
         </div>
       </div>
       {/* content */}
