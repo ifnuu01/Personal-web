@@ -41,6 +41,10 @@ function BlogList() {
           {paginatedPosts.map((post, index) => (
             <div
               key={index}
+              data-aos="fade-up"
+              data-aos-duration="1000"
+              data-aos-delay={index * 100}
+              data-aos-once="true"
               className="bg-white shadow-lg rounded-3xl w-full px-4 py-5 lg:w-[40%] mx-auto"
             >
               <div className="flex items-center justify-between gap-4">
@@ -59,7 +63,13 @@ function BlogList() {
         </div>
         {/* pagination */}
 
-        <div className="flex gap-2 mt-4 lg:justify-end w-full lg:w-[40%] mx-auto">
+        <div
+          data-aos="fade-up"
+          data-aos-duration="1000"
+          data-aos-delay="300"
+          data-aos-once="true"
+          className="flex gap-2 mt-4 lg:justify-end w-full lg:w-[40%] mx-auto"
+        >
           <button
             onClick={() => setCurrentPage((prev) => Math.max(prev - 1, 1))}
             disabled={currentPage === 1}
