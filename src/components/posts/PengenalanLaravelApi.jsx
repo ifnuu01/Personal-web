@@ -19,9 +19,9 @@ function PengenalanLaravelApi() {
         </div>
       </div>
       {/* content */}
-      <div className="prose max-w-none mt-6 bg-white p-2 rounded-lg text-primary text-justify overflow-hidden">
+      <div className="prose max-w-none mt-6 bg-white p-2 rounded-lg shadow-lg text-primary text-justify overflow-hidden">
         <h2 className="text-lg font-bold text-secondary mb-4">
-          Apa itu REST API?
+          Apa itu REST API?🤔
         </h2>
         <p>
           <b>REST API</b> (Representational State Transfer Application

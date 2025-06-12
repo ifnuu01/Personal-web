@@ -43,16 +43,16 @@ function BlogList() {
               key={index}
               className="bg-white shadow-lg rounded-3xl w-full px-4 py-5 lg:w-[40%] mx-auto"
             >
-              <div className="flex items-center justify-between">
-                <h1 className="font-bold text-secondary">{post.title}</h1>
-                <span className="text-gray-500 text-xs">{post.date}</span>
+              <div className="flex items-center justify-between gap-4">
+                <h1 className="font-bold text-secondary">📚 {post.title}</h1>
+                <span className="text-gray-500 text-xs">📅 {post.date}</span>
               </div>
               <p className="text-gray-600 mt-2">{post.description}</p>
               <Link
                 to={post.link}
                 className="text-white hover:underline mt-4 flex justify-self-end p-2 bg-primary w-fit rounded-lg"
               >
-                Baca Selengkapnya
+                🔗 Baca Selengkapnya
               </Link>
             </div>
           ))}
