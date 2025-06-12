@@ -119,7 +119,7 @@ const Header = () => {
           ></span>
         </Link>
 
-        {/* Resume */}
+        {/* Blog */}
         <Link
           to="/blog"
           onClick={scrollToTop}
@@ -129,7 +129,7 @@ const Header = () => {
           <span
             className={`absolute bottom-0 top-6 lg:top-8 left-0 w-full h-[2px] bg-[#FC882F] 
                 ${
-                  location.pathname === "/blog"
+                  location.pathname.startsWith("/blog")
                     ? "scale-x-100"
                     : "scale-x-0 group-hover:scale-x-100"
                 } transition-transform duration-300 ease-in-out`}
