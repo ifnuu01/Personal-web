@@ -71,6 +71,11 @@ function PengenalanLaravelApi(props) {
         </Code>
         <p>Setelah selesai, masuk ke folder project:</p>
         <Code language="bash">{`cd laravel-api`}</Code>
+        <p>
+          Laravel 12 tidak langsung memiliki konfigurasi API kita perlu install
+          terlebih dahulu
+        </p>
+        <Code language="bash">{`php artisan install:api`}</Code>
         <p>Jalankan server lokal:</p>
         <Code language="bash">{`php artisan serve`}</Code>
         <p>
