@@ -96,10 +96,18 @@ function Card() {
       linkIcon: "🔗",
       link: "https://github.com/ifnuu01/Pencatatan-Keuangan",
       techIcons: [
-        { src: "devicon:laravel", alt: "Laravel" },
         { src: "devicon:tailwindcss", alt: "Tailwind CSS" },
-        { src: "devicon:mysql", alt: "MySQL" },
         { src: "logos:react", alt: "React" },
+      ],
+    },
+    {
+      imageSrc: "/Laravel-Api.png",
+      title: "API I-Catat",
+      linkIcon: "🔗",
+      link: "https://github.com/ifnuu01/api-pencatatan-keuangan",
+      techIcons: [
+        { src: "devicon:laravel", alt: "Laravel" },
+        { src: "devicon:mysql", alt: "MySQL" },
       ],
     },
   ];
