@@ -113,14 +113,14 @@ function Card() {
   ];
 
   return (
-    <div className="w-full px-5 grid grid-cols-1 gap-4 md:grid-cols-2 lg:px-0 lg:grid-cols-2 lg:w-[40%] mx-auto">
+    <div className="w-full px-5 grid grid-cols-1 gap-4 md:grid-cols-2 lg:px-0 lg:grid-cols-4 lg:w-[90%] mx-auto">
       {cardData.map((data, index) => {
         const [isImageLoaded, setIsImageLoaded] = useState(false);
         return (
           <div
             key={index}
             data-aos="zoom-in"
-            data-aos-duration="1000"
+            data-aos-duration="500"
             data-aos-delay="300"
             className="mt-4"
           >
