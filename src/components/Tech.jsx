@@ -47,10 +47,8 @@ function Tech() {
             />
           </div>
 
-          {/* Gradient overlay on hover */}
           <div className="absolute inset-0 bg-gradient-to-br from-primary/5 to-orange-400/5 rounded-2xl opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
 
-          {/* Subtle glow effect */}
           <div className="absolute inset-0 rounded-2xl opacity-0 group-hover:opacity-20 transition-opacity duration-300 bg-gradient-to-r from-primary to-orange-400 blur-sm -z-10"></div>
         </motion.div>
       ))}
