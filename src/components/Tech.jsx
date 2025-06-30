@@ -15,6 +15,7 @@ function Tech() {
     { src: "devicon:mysql" },
     { src: "material-icon-theme:python" },
     { src: "devicon:streamlit" },
+    { src: "devicon:typescript" },
   ];
 
   return (

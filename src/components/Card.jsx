@@ -110,6 +110,13 @@ function Card() {
         { src: "devicon:mysql", alt: "MySQL" },
       ],
     },
+    {
+      imageSrc: "/I-Timer.png",
+      title: "I-Timer",
+      linkIcon: "🔗",
+      link: "https://i-timer-two.vercel.app/",
+      techIcons: [{ src: "devicon:typescript", alt: "TypeScript" }],
+    },
   ];
 
   return (
