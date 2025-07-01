@@ -115,7 +115,10 @@ function Card() {
       title: "I-Timer",
       linkIcon: "🔗",
       link: "https://i-timer-two.vercel.app/",
-      techIcons: [{ src: "devicon:typescript", alt: "TypeScript" }],
+      techIcons: [
+        { src: "devicon:typescript", alt: "TypeScript" },
+        { src: "devicon:tailwindcss", alt: "Tailwind CSS" },
+      ],
     },
   ];
 
