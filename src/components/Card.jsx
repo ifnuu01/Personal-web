@@ -120,6 +120,17 @@ function Card() {
         { src: "devicon:tailwindcss", alt: "Tailwind CSS" },
       ],
     },
+    {
+      imageSrc: "/I-Tracker.png",
+      title: "I-Tracker",
+      linkIcon: "🔗",
+      link: "https://github.com/ifnuu01/I-Tracker",
+      techIcons: [
+        { src: "devicon:laravel", alt: "Laravel" },
+        { src: "devicon:typescript", alt: "TypeScript" },
+        { src: "devicon:tailwindcss", alt: "Tailwind CSS" },
+      ],
+    },
   ];
 
   return (
