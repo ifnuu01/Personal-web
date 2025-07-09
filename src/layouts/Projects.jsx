@@ -1,7 +1,7 @@
-import React from "react";
 import Layout from "./Layout";
 import Title from "../components/Title";
 import Card from "../components/Card";
+import Certif from "../components/Certif";
 
 function Projects() {
   return (
@@ -9,6 +9,8 @@ function Projects() {
       <Layout>
         <Title text="Projects I've Worked On 🚀" />
         <Card />
+        <Title text="My Certifications 📜" />
+        <Certif />
       </Layout>
     </>
   );
