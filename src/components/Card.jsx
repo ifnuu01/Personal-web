@@ -48,6 +48,16 @@ function Card() {
       ],
     },
     {
+      imageSrc: "/Porto-v2.png",
+      title: "Porto v2",
+      linkIcon: "🔗",
+      link: "https://ifnu-umar.vercel.app/",
+      techIcons: [
+        { src: "logos:react", alt: "React" },
+        { src: "devicon:tailwindcss", alt: "Tailwind CSS" },
+      ],
+    },
+    {
       imageSrc: "/pet-heaven.png",
       title: "Pet Heaven",
       linkIcon: "🔗",
