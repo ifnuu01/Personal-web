@@ -182,7 +182,7 @@ function Card() {
                 alt=""
                 onLoad={() => setIsImageLoaded(true)}
               />
-              <div className="absolute bottom-2 right-2 bg-white text-primary font-semibold px-6 w-full h-[80px] overflow-hidden opacity-0 group-hover:opacity-100 transition-all duration-300 ease-in">
+              <div className="absolute bottom-2 right-2 bg-white text-primary font-semibold px-6 py-1 w-full h-[80px] overflow-hidden opacity-0 group-hover:opacity-100 transition-all duration-300 ease-in">
                 <p>{data.description || ""}</p>
               </div>
             </div>
