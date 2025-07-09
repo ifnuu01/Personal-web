@@ -160,7 +160,7 @@ function Card() {
   ];
 
   return (
-    <div className="w-full px-5 grid grid-cols-1 gap-2 md:grid-cols-2 lg:px-0 lg:grid-cols-4 lg:w-[90%] mx-auto">
+    <div className="w-full px-5 flex flex-wrap justify-center gap-4">
       {cardData.map((data, index) => {
         const [isImageLoaded, setIsImageLoaded] = useState(false);
         return (
@@ -171,8 +171,7 @@ function Card() {
             data-aos-delay="300"
             className="mt-4"
           >
-            {/* Image */}
-            <div className="bg-white shadow-lg rounded-lg w-full p-2 relative group cursor-pointer">
+            <div className="bg-white shadow-lg rounded-lg w-[350px] md:w-80 p-2 relative group cursor-pointer">
               {!isImageLoaded && <Skeleton height={160} borderRadius={16} />}
               <img
                 src={data.imageSrc}
@@ -187,7 +186,6 @@ function Card() {
               </div>
             </div>
 
-            {/* Content */}
             <div className="flex justify-between items-center mt-2">
               <div className="bg-white shadow-lg rounded-full rounded-tl-none w-fit p-2">
                 <p className="font-bold text-md drop-shadow-lg cursor-default text-primary">
@@ -201,7 +199,6 @@ function Card() {
               </div>
             </div>
 
-            {/* Tech */}
             <div className="flex items-center flex-wrap gap-2 mt-2">
               {data.techIcons.map((icon, i) => (
                 <div
