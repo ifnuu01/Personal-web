@@ -18,42 +18,10 @@ function Card() {
       ],
     },
     {
-      imageSrc: "/pet-heaven.png",
-      title: "Pet Heaven",
-      linkIcon: "🔗",
-      link: "https://pet-heaven.wuaze.com/",
-      techIcons: [
-        { src: "vscode-icons:file-type-html", alt: "HTML5" },
-        { src: "devicon:css3", alt: "CSS3" },
-        { src: "vscode-icons:file-type-js-official", alt: "JavaScript" },
-        { src: "devicon:php", alt: "PHP" },
-      ],
-    },
-    {
       imageSrc: "/eazy-ui.png",
       title: "Eazy UI",
       linkIcon: "🔗",
       link: "https://eazy-ui.vercel.app/",
-      techIcons: [
-        { src: "logos:react", alt: "React" },
-        { src: "devicon:tailwindcss", alt: "Tailwind CSS" },
-      ],
-    },
-    {
-      imageSrc: "/ReFilm.png",
-      title: "ReFilm",
-      linkIcon: "🔗",
-      link: "https://github.com/ifnuu01/Re-Film-v2",
-      techIcons: [
-        { src: "devicon:laravel", alt: "Laravel" },
-        { src: "devicon:tailwindcss", alt: "Tailwindcss" },
-      ],
-    },
-    {
-      imageSrc: "/Eazy-Job.png",
-      title: "Eazy Job",
-      linkIcon: "🔗",
-      link: "https://sparkling-youtiao-604eee.netlify.app/",
       techIcons: [
         { src: "logos:react", alt: "React" },
         { src: "devicon:tailwindcss", alt: "Tailwind CSS" },
@@ -74,6 +42,48 @@ function Card() {
       title: "Porto v1",
       linkIcon: "🔗",
       link: "https://github.com/ifnuu01/Porto-v1",
+      techIcons: [
+        { src: "logos:react", alt: "React" },
+        { src: "devicon:tailwindcss", alt: "Tailwind CSS" },
+      ],
+    },
+    {
+      imageSrc: "/pet-heaven.png",
+      title: "Pet Heaven",
+      linkIcon: "🔗",
+      link: "https://pet-heaven.wuaze.com/",
+      techIcons: [
+        { src: "vscode-icons:file-type-html", alt: "HTML5" },
+        { src: "devicon:css3", alt: "CSS3" },
+        { src: "vscode-icons:file-type-js-official", alt: "JavaScript" },
+        { src: "devicon:php", alt: "PHP" },
+      ],
+    },
+    {
+      imageSrc: "/I-Timer.png",
+      title: "I-Timer",
+      linkIcon: "🔗",
+      link: "https://i-timer-two.vercel.app/",
+      techIcons: [
+        { src: "devicon:typescript", alt: "TypeScript" },
+        { src: "devicon:tailwindcss", alt: "Tailwind CSS" },
+      ],
+    },
+    {
+      imageSrc: "/ReFilm.png",
+      title: "ReFilm",
+      linkIcon: "🔗",
+      link: "https://github.com/ifnuu01/Re-Film-v2",
+      techIcons: [
+        { src: "devicon:laravel", alt: "Laravel" },
+        { src: "devicon:tailwindcss", alt: "Tailwindcss" },
+      ],
+    },
+    {
+      imageSrc: "/Eazy-Job.png",
+      title: "Eazy Job",
+      linkIcon: "🔗",
+      link: "https://sparkling-youtiao-604eee.netlify.app/",
       techIcons: [
         { src: "logos:react", alt: "React" },
         { src: "devicon:tailwindcss", alt: "Tailwind CSS" },
@@ -101,26 +111,6 @@ function Card() {
       ],
     },
     {
-      imageSrc: "/Laravel-Api.png",
-      title: "API I-Catat",
-      linkIcon: "🔗",
-      link: "https://github.com/ifnuu01/api-pencatatan-keuangan",
-      techIcons: [
-        { src: "devicon:laravel", alt: "Laravel" },
-        { src: "devicon:mysql", alt: "MySQL" },
-      ],
-    },
-    {
-      imageSrc: "/I-Timer.png",
-      title: "I-Timer",
-      linkIcon: "🔗",
-      link: "https://i-timer-two.vercel.app/",
-      techIcons: [
-        { src: "devicon:typescript", alt: "TypeScript" },
-        { src: "devicon:tailwindcss", alt: "Tailwind CSS" },
-      ],
-    },
-    {
       imageSrc: "/I-Tracker.png",
       title: "I-Tracker",
       linkIcon: "🔗",
@@ -129,6 +119,16 @@ function Card() {
         { src: "devicon:laravel", alt: "Laravel" },
         { src: "devicon:typescript", alt: "TypeScript" },
         { src: "devicon:tailwindcss", alt: "Tailwind CSS" },
+      ],
+    },
+    {
+      imageSrc: "/Laravel-Api.png",
+      title: "API I-Catat",
+      linkIcon: "🔗",
+      link: "https://github.com/ifnuu01/api-pencatatan-keuangan",
+      techIcons: [
+        { src: "devicon:laravel", alt: "Laravel" },
+        { src: "devicon:mysql", alt: "MySQL" },
       ],
     },
   ];
