@@ -9,7 +9,7 @@ function Card() {
       imageSrc: "/issue-sedunia.png",
       title: "Issue Sedunia",
       description: "This is a platform to report and discuss global issues.",
-      linkIcon: "🔗",
+      linkIcon: "mdi:github",
       link: "https://github.com/ifnuu01/issue-sedunia",
       techIcons: [
         { src: "vscode-icons:file-type-html", alt: "HTML5" },
@@ -22,7 +22,7 @@ function Card() {
       imageSrc: "/eazy-ui.png",
       title: "Eazy UI",
       description: "A simple and easy-to-use UI library CSS Native.",
-      linkIcon: "🔗",
+      linkIcon: "material-symbols:link",
       link: "https://eazy-ui.vercel.app/",
       techIcons: [
         { src: "logos:react", alt: "React" },
@@ -33,7 +33,7 @@ function Card() {
       imageSrc: "/tomato-detection.png",
       title: "Tomato Detection",
       description: "A Streamlit app for detecting the ripeness of tomatoes.",
-      linkIcon: "🔗",
+      linkIcon: "material-symbols:link",
       link: "https://tomato-ripeness-detection-nvb4bjpbumixgkm5khedea.streamlit.app/",
       techIcons: [
         { src: "material-icon-theme:python", alt: "Python" },
@@ -45,7 +45,7 @@ function Card() {
       title: "Porto v1",
       description:
         "A personal portfolio website built with React and Tailwind CSS.",
-      linkIcon: "🔗",
+      linkIcon: "mdi:github",
       link: "https://github.com/ifnuu01/Porto-v1",
       techIcons: [
         { src: "logos:react", alt: "React" },
@@ -57,7 +57,7 @@ function Card() {
       title: "Porto v2",
       description:
         "A personal portfolio website built with React and Tailwind CSS, featuring a modern design.",
-      linkIcon: "🔗",
+      linkIcon: "material-symbols:link",
       link: "https://ifnu-umar.vercel.app/",
       techIcons: [
         { src: "logos:react", alt: "React" },
@@ -68,7 +68,7 @@ function Card() {
       imageSrc: "/pet-heaven.png",
       title: "Pet Heaven",
       description: "A platform for buying and selling pets.",
-      linkIcon: "🔗",
+      linkIcon: "material-symbols:link",
       link: "https://pet-heaven.wuaze.com/",
       techIcons: [
         { src: "vscode-icons:file-type-html", alt: "HTML5" },
@@ -81,7 +81,7 @@ function Card() {
       imageSrc: "/I-Timer.png",
       title: "I-Timer",
       description: "A simple timer application built with React.",
-      linkIcon: "🔗",
+      linkIcon: "material-symbols:link",
       link: "https://i-timer-two.vercel.app/",
       techIcons: [
         { src: "devicon:typescript", alt: "TypeScript" },
@@ -92,7 +92,7 @@ function Card() {
       imageSrc: "/ReFilm.png",
       title: "ReFilm",
       description: "A movie review platform built with Laravel.",
-      linkIcon: "🔗",
+      linkIcon: "mdi:github",
       link: "https://github.com/ifnuu01/Re-Film-v2",
       techIcons: [
         { src: "devicon:laravel", alt: "Laravel" },
@@ -103,7 +103,7 @@ function Card() {
       imageSrc: "/Eazy-Job.png",
       title: "Eazy Job",
       description: "A job listing platform built with React and Tailwind CSS.",
-      linkIcon: "🔗",
+      linkIcon: "material-symbols:link",
       link: "https://sparkling-youtiao-604eee.netlify.app/",
       techIcons: [
         { src: "logos:react", alt: "React" },
@@ -114,7 +114,7 @@ function Card() {
       imageSrc: "/Laundry-Notes.png",
       title: "Laundry Notes",
       description: "A laundry management system built with Fullstack Laravel.",
-      linkIcon: "🔗",
+      linkIcon: "mdi:github",
       link: "https://github.com/ifnuu01/LaundryNotes",
       techIcons: [
         { src: "devicon:laravel", alt: "Laravel" },
@@ -126,7 +126,7 @@ function Card() {
       imageSrc: "/I-Catat.png",
       title: "I-Catat",
       description: "A personal finance management application.",
-      linkIcon: "🔗",
+      linkIcon: "mdi:github",
       link: "https://github.com/ifnuu01/Pencatatan-Keuangan",
       techIcons: [
         { src: "devicon:tailwindcss", alt: "Tailwind CSS" },
@@ -138,7 +138,7 @@ function Card() {
       title: "I-Tracker",
       description:
         "A task management application built with Fullstack Laravel.",
-      linkIcon: "🔗",
+      linkIcon: "mdi:github",
       link: "https://github.com/ifnuu01/I-Tracker",
       techIcons: [
         { src: "devicon:laravel", alt: "Laravel" },
@@ -150,7 +150,7 @@ function Card() {
       imageSrc: "/Laravel-Api.png",
       title: "API I-Catat",
       description: "A RESTful API for personal finance management.",
-      linkIcon: "🔗",
+      linkIcon: "mdi:github",
       link: "https://github.com/ifnuu01/api-pencatatan-keuangan",
       techIcons: [
         { src: "devicon:laravel", alt: "Laravel" },
@@ -162,7 +162,7 @@ function Card() {
       title: "I-World",
       description:
         "I World is a web application that provides information about countries around the world.",
-      linkIcon: "🔗",
+      linkIcon: "material-symbols:link",
       link: "https://i-world-navy.vercel.app/",
       techIcons: [
         { src: "logos:react", alt: "React" },
@@ -207,7 +207,11 @@ function Card() {
               </div>
               <div className="bg-white shadow-lg rounded-lg w-fit p-2 cursor-pointer hover:scale-110 transition-transform duration-300 ease-in-out">
                 <a href={data.link} target="_blank">
-                  {data.linkIcon}
+                  <Icon
+                    icon={data.linkIcon}
+                    className="text-2xl text-primary"
+                    alt="Link Icon"
+                  />
                 </a>
               </div>
             </div>
