@@ -157,6 +157,19 @@ function Card() {
         { src: "devicon:mysql", alt: "MySQL" },
       ],
     },
+    {
+      imageSrc: "/I-World.png",
+      title: "I-World",
+      description:
+        "I World is a web application that provides information about countries around the world.",
+      linkIcon: "🔗",
+      link: "https://i-world-navy.vercel.app/",
+      techIcons: [
+        { src: "logos:react", alt: "React" },
+        { src: "devicon:typescript", alt: "TypeScript" },
+        { src: "devicon:tailwindcss", alt: "Tailwind CSS" },
+      ],
+    },
   ];
 
   return (
