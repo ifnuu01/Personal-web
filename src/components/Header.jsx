@@ -1,4 +1,4 @@
-import React from "react";
+import { useEffect } from "react";
 import foto from "../../public/ifnu.jpg";
 import { Link, useLocation } from "react-router-dom";
 import { motion } from "framer-motion";
@@ -6,9 +6,9 @@ import { motion } from "framer-motion";
 const Header = () => {
   const location = useLocation();
 
-  const scrollToTop = () => {
-    window.scrollTo({ top: 0, behavior: "smooth" });
-  };
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, [location.pathname]);
 
   return (
     <>
@@ -28,25 +28,49 @@ const Header = () => {
           <motion.a
             href="https://www.linkedin.com/in/ifnu-umar-03859930a/"
             target="_blank"
-            className="bg-white shadow-md p-2 rounded-xl cursor-pointer"
-            initial={{ opacity: 0, scale: 0.5, y: 20 }}
-            whileInView={{ opacity: 1, scale: 1, y: 0 }}
-            transition={{ duration: 0.9 }}
+            className="bg-white shadow-md p-2 rounded-xl cursor-pointer hover:shadow-lg"
+            initial={{ opacity: 0, scale: 0, rotate: -180 }}
+            whileInView={{ opacity: 1, scale: 1, rotate: 0 }}
+            whileHover={{
+              scale: 1.1,
+              rotate: [0, -10, 10, 0],
+              transition: { duration: 0.3 },
+            }}
+            whileTap={{ scale: 0.95 }}
+            transition={{
+              duration: 0.6,
+              delay: 0.1,
+              type: "spring",
+              stiffness: 200,
+              damping: 10,
+            }}
             viewport={{ once: true, amount: 0.3 }}
-            nnp
           >
             <img
               src="https://cdn-icons-png.flaticon.com/512/174/174857.png"
               className="w-6 h-6"
             />
           </motion.a>
+
           <motion.a
             href="https://www.facebook.com/ifnu.ifnu.756859/"
             target="_blank"
-            className="bg-white shadow-md p-2 rounded-xl cursor-pointer"
-            initial={{ opacity: 0, scale: 0.5, y: 20 }}
-            whileInView={{ opacity: 1, scale: 1, y: 0 }}
-            transition={{ duration: 0.9 }}
+            className="bg-white shadow-md p-2 rounded-xl cursor-pointer hover:shadow-lg"
+            initial={{ opacity: 0, scale: 0, rotate: 180 }}
+            whileInView={{ opacity: 1, scale: 1, rotate: 0 }}
+            whileHover={{
+              scale: 1.1,
+              y: -5,
+              transition: { duration: 0.2, type: "spring" },
+            }}
+            whileTap={{ scale: 0.95 }}
+            transition={{
+              duration: 0.6,
+              delay: 0.2,
+              type: "spring",
+              stiffness: 200,
+              damping: 10,
+            }}
             viewport={{ once: true, amount: 0.3 }}
           >
             <img
@@ -54,13 +78,26 @@ const Header = () => {
               className="w-6 h-6"
             />
           </motion.a>
+
           <motion.a
             href="https://github.com/ifnuu01"
             target="_blank"
-            className="bg-white shadow-md p-2 rounded-xl cursor-pointer"
-            initial={{ opacity: 0, scale: 0.5, y: 20 }}
-            whileInView={{ opacity: 1, scale: 1, y: 0 }}
-            transition={{ duration: 0.9 }}
+            className="bg-white shadow-md p-2 rounded-xl cursor-pointer hover:shadow-lg"
+            initial={{ opacity: 0, x: -50, rotate: -90 }}
+            whileInView={{ opacity: 1, x: 0, rotate: 0 }}
+            whileHover={{
+              scale: 1.1,
+              rotate: 360,
+              transition: { duration: 0.4 },
+            }}
+            whileTap={{ scale: 0.95 }}
+            transition={{
+              duration: 0.6,
+              delay: 0.3,
+              type: "spring",
+              stiffness: 200,
+              damping: 10,
+            }}
             viewport={{ once: true, amount: 0.3 }}
           >
             <img
@@ -68,13 +105,26 @@ const Header = () => {
               className="w-6 h-6"
             />
           </motion.a>
+
           <motion.a
             href="https://www.instagram.com/ifnu_mr/"
             target="_blank"
-            className="bg-white shadow-md p-2 rounded-xl cursor-pointer"
-            initial={{ opacity: 0, scale: 0.5, y: 20 }}
-            whileInView={{ opacity: 1, scale: 1, y: 0 }}
-            transition={{ duration: 0.9 }}
+            className="bg-white shadow-md p-2 rounded-xl cursor-pointer hover:shadow-lg"
+            initial={{ opacity: 0, y: 50, scale: 0.5 }}
+            whileInView={{ opacity: 1, y: 0, scale: 1 }}
+            whileHover={{
+              scale: 1.15,
+              rotate: [0, -15, 15, 0],
+              transition: { duration: 0.5, repeat: Infinity },
+            }}
+            whileTap={{ scale: 0.95 }}
+            transition={{
+              duration: 0.6,
+              delay: 0.4,
+              type: "spring",
+              stiffness: 200,
+              damping: 10,
+            }}
             viewport={{ once: true, amount: 0.3 }}
           >
             <img
@@ -88,7 +138,6 @@ const Header = () => {
         {/* About */}
         <Link
           to="/"
-          onClick={scrollToTop}
           className="relative flex items-center cursor-pointer group"
         >
           <span className="text-md lg:text-lg">👋 About</span>
@@ -105,7 +154,6 @@ const Header = () => {
         {/* Projects */}
         <Link
           to="/projects"
-          onClick={scrollToTop}
           className="relative flex items-center cursor-pointer group"
         >
           <span className="text-md lg:text-lg">🛠️ Projects</span>
@@ -122,7 +170,6 @@ const Header = () => {
         {/* Blog */}
         <Link
           to="/blog"
-          onClick={scrollToTop}
           className="relative flex items-center cursor-pointer group"
         >
           <span className="text-md lg:text-lg">📄 Blog</span>
