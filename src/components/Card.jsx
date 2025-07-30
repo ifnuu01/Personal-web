@@ -170,6 +170,14 @@ function Card() {
         { src: "devicon:tailwindcss", alt: "Tailwind CSS" },
       ],
     },
+    {
+      imageSrc: "/I-Tasks.png",
+      title: "I-Tasks",
+      description: "A task management application built with Expo",
+      linkIcon: "mdi:github",
+      link: "https://github.com/ifnuu01/I-Task",
+      techIcons: [{ src: "file-icons:expo", alt: "Expo" }],
+    },
   ];
 
   return (

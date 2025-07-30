@@ -16,6 +16,7 @@ function Tech() {
     { src: "material-icon-theme:python" },
     { src: "devicon:streamlit" },
     { src: "devicon:typescript" },
+    { src: "file-icons:expo" },
   ];
 
   return (
