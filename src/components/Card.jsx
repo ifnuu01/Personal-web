@@ -178,6 +178,20 @@ function Card() {
       link: "https://github.com/ifnuu01/I-Task",
       techIcons: [{ src: "file-icons:expo", alt: "Expo" }],
     },
+    {
+      imageSrc: "/I-Chat.png",
+      title: "I-Chat",
+      description:
+        "A real-time chat application built with React Naitve Expo and Pusher",
+      linkIcon: "mdi:github",
+      link: "https://github.com/ifnuu01/I-CHAT",
+      techIcons: [
+        { src: "file-icons:expo", alt: "Expo" },
+        { src: "logos:react", alt: "React" },
+        { src: "devicon:typescript", alt: "TypeScript" },
+        { src: "logos:pusher", alt: "Pusher" },
+      ],
+    },
   ];
 
   return (
