@@ -123,6 +123,17 @@ function Card() {
       ],
     },
     {
+      imageSrc: "/Laravel-Api.png",
+      title: "API I-Catat",
+      description: "A RESTful API for personal finance management.",
+      linkIcon: "mdi:github",
+      link: "https://github.com/ifnuu01/api-pencatatan-keuangan",
+      techIcons: [
+        { src: "devicon:laravel", alt: "Laravel" },
+        { src: "devicon:mysql", alt: "MySQL" },
+      ],
+    },
+    {
       imageSrc: "/I-Catat.png",
       title: "I-Catat",
       description: "A personal finance management application.",
@@ -147,17 +158,6 @@ function Card() {
       ],
     },
     {
-      imageSrc: "/Laravel-Api.png",
-      title: "API I-Catat",
-      description: "A RESTful API for personal finance management.",
-      linkIcon: "mdi:github",
-      link: "https://github.com/ifnuu01/api-pencatatan-keuangan",
-      techIcons: [
-        { src: "devicon:laravel", alt: "Laravel" },
-        { src: "devicon:mysql", alt: "MySQL" },
-      ],
-    },
-    {
       imageSrc: "/I-World.png",
       title: "I-World",
       description:
@@ -177,6 +177,17 @@ function Card() {
       linkIcon: "mdi:github",
       link: "https://github.com/ifnuu01/I-Task",
       techIcons: [{ src: "file-icons:expo", alt: "Expo" }],
+    },
+    {
+      imageSrc: "/Laravel-Api.png",
+      title: "API I-Chat",
+      description: "A RESTful API for the I-Chat application.",
+      linkIcon: "mdi:github",
+      link: "https://github.com/ifnuu01/api-i-chat.git",
+      techIcons: [
+        { src: "devicon:laravel", alt: "Laravel" },
+        { src: "devicon:mysql", alt: "MySQL" },
+      ],
     },
     {
       imageSrc: "/I-Chat.png",
