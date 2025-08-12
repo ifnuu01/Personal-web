@@ -10,12 +10,13 @@ function Tech() {
     { src: "devicon:nodejs-wordmark" },
     { src: "devicon:bootstrap" },
     { src: "devicon:tailwindcss" },
-    { src: "logos:react" },
     { src: "logos:laravel" },
+    { src: "skill-icons:expressjs-light" },
+    { src: "logos:react" },
+    { src: "devicon:typescript" },
     { src: "devicon:mysql" },
     { src: "material-icon-theme:python" },
     { src: "devicon:streamlit" },
-    { src: "devicon:typescript" },
     { src: "file-icons:expo" },
   ];
 

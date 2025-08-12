@@ -123,17 +123,6 @@ function Card() {
       ],
     },
     {
-      imageSrc: "/Laravel-Api.png",
-      title: "API I-Catat",
-      description: "A RESTful API for personal finance management.",
-      linkIcon: "mdi:github",
-      link: "https://github.com/ifnuu01/api-pencatatan-keuangan",
-      techIcons: [
-        { src: "devicon:laravel", alt: "Laravel" },
-        { src: "devicon:mysql", alt: "MySQL" },
-      ],
-    },
-    {
       imageSrc: "/I-Catat.png",
       title: "I-Catat",
       description: "A personal finance management application.",
@@ -180,6 +169,17 @@ function Card() {
     },
     {
       imageSrc: "/Laravel-Api.png",
+      title: "API I-Catat",
+      description: "A RESTful API for personal finance management.",
+      linkIcon: "mdi:github",
+      link: "https://github.com/ifnuu01/api-pencatatan-keuangan",
+      techIcons: [
+        { src: "devicon:laravel", alt: "Laravel" },
+        { src: "devicon:mysql", alt: "MySQL" },
+      ],
+    },
+    {
+      imageSrc: "/Laravel-Api.png",
       title: "API I-Chat",
       description: "A RESTful API for the I-Chat application.",
       linkIcon: "mdi:github",
@@ -201,6 +201,20 @@ function Card() {
         { src: "logos:react", alt: "React" },
         { src: "devicon:typescript", alt: "TypeScript" },
         { src: "logos:pusher", alt: "Pusher" },
+      ],
+    },
+    {
+      imageSrc: "/SENTRA.png",
+      title: "SENTRA",
+      description: "A web application for managing community activities.",
+      linkIcon: "material-symbols:android",
+      link: "https://expo.dev/artifacts/eas/neeriY7VdVkg5exMXLAZbb.apk",
+      techIcons: [
+        { src: "file-icons:expo", alt: "Expo" },
+        { src: "logos:react", alt: "React" },
+        { src: "devicon:typescript", alt: "TypeScript" },
+        { src: "skill-icons:expressjs-light", alt: "Express.js" },
+        { src: "logos:cloudinary-icon", alt: "Cloudinary" },
       ],
     },
   ];
