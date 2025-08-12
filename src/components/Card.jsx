@@ -206,7 +206,8 @@ function Card() {
     {
       imageSrc: "/SENTRA.png",
       title: "SENTRA",
-      description: "A web application for managing community activities.",
+      description:
+        "The smart color detection app with a chatbot that helps you choose the best palette for any project.",
       linkIcon: "material-symbols:android",
       link: "https://expo.dev/artifacts/eas/neeriY7VdVkg5exMXLAZbb.apk",
       techIcons: [
