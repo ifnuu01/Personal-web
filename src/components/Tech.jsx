@@ -18,6 +18,7 @@ function Tech() {
     { src: "material-icon-theme:python" },
     { src: "devicon:streamlit" },
     { src: "file-icons:expo" },
+    { src: "devicon:mongodb", alt: "MongoDB" },
   ];
 
   return (
