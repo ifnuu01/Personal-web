@@ -41,6 +41,24 @@ function Certif() {
       description: "Huawei Certified ICT Associate",
       link: "",
     },
+    {
+      imageSrc: "/IBMGenAi.png",
+      title: "IBM Gen AI",
+      description: "Certified AI Specialist",
+      link: "",
+    },
+    {
+      imageSrc: "/IBMGranite.png",
+      title: "IBM Granite",
+      description: "Granite Models",
+      link: "",
+    },
+    {
+      imageSrc: "/IBMCode.png",
+      title: "Code Generation and Optimization",
+      description: "IBM",
+      link: "",
+    },
   ];
 
   const [selectedImage, setSelectedImage] = useState(null);
