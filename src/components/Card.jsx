@@ -10,7 +10,7 @@ function Card() {
       imageSrc: "/eazy-ui.png",
       title: "Eazy UI",
       description: "A simple and easy-to-use UI library CSS Native.",
-      linkIcon: "material-symbols:link",
+      linkIcon: "akar-icons:link-out",
       link: "https://eazy-ui.vercel.app/",
       techIcons: [
         { src: "logos:react", alt: "React" },
@@ -22,7 +22,7 @@ function Card() {
       imageSrc: "/tomato-detection.png",
       title: "Tomato Detection",
       description: "A Streamlit app for detecting the ripeness of tomatoes.",
-      linkIcon: "material-symbols:link",
+      linkIcon: "akar-icons:link-out",
       link: "https://tomato-ripeness-detection-nvb4bjpbumixgkm5khedea.streamlit.app/",
       techIcons: [
         { src: "material-icon-theme:python", alt: "Python" },
@@ -35,7 +35,7 @@ function Card() {
       title: "Porto v2",
       description:
         "A personal portfolio website built with React and Tailwind CSS, featuring a modern design.",
-      linkIcon: "material-symbols:link",
+      linkIcon: "akar-icons:link-out",
       link: "https://ifnu-umar.vercel.app/",
       techIcons: [
         { src: "logos:react", alt: "React" },
@@ -47,7 +47,7 @@ function Card() {
       imageSrc: "/pet-heaven.png",
       title: "Pet Heaven",
       description: "A platform for buying and selling pets.",
-      linkIcon: "material-symbols:link",
+      linkIcon: "akar-icons:link-out",
       link: "https://pet-heaven.wuaze.com/",
       techIcons: [
         { src: "vscode-icons:file-type-html", alt: "HTML5" },
@@ -61,7 +61,7 @@ function Card() {
       imageSrc: "/I-Timer.png",
       title: "I-Timer",
       description: "A simple timer application built with React.",
-      linkIcon: "material-symbols:link",
+      linkIcon: "akar-icons:link-out",
       link: "https://i-timer-two.vercel.app/",
       techIcons: [
         { src: "devicon:typescript", alt: "TypeScript" },
@@ -73,7 +73,7 @@ function Card() {
       imageSrc: "/Eazy-Job.png",
       title: "Eazy Job",
       description: "A job listing platform built with React and Tailwind CSS.",
-      linkIcon: "material-symbols:link",
+      linkIcon: "akar-icons:link-out",
       link: "https://sparkling-youtiao-604eee.netlify.app/",
       techIcons: [
         { src: "logos:react", alt: "React" },
@@ -125,7 +125,7 @@ function Card() {
       title: "I-World",
       description:
         "I World is a web application that provides information about countries around the world.",
-      linkIcon: "material-symbols:link",
+      linkIcon: "akar-icons:link-out",
       link: "https://i-world-navy.vercel.app/",
       techIcons: [
         { src: "logos:react", alt: "React" },
