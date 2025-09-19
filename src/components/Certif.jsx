@@ -104,7 +104,7 @@ function Certif() {
                     target="_blank"
                     className="absolute bottom-2 right-12 bg-white rounded-full p-1 shadow-md hover:bg-secondary transition-colors"
                   >
-                    <Icon icon="material-symbols:link" width="24" height="24" />
+                    <Icon icon="akar-icons:link-out" width="24" height="24" />
                   </Link>
                 )}
               </div>
