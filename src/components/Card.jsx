@@ -135,15 +135,6 @@ function Card() {
       category: "web",
     },
     {
-      imageSrc: "/I-Tasks.png",
-      title: "I-Tasks",
-      description: "A task management application built with Expo",
-      linkIcon: "mdi:github",
-      link: "https://github.com/ifnuu01/I-Task",
-      techIcons: [{ src: "file-icons:expo", alt: "Expo" }],
-      category: "mobile",
-    },
-    {
       imageSrc: "/Laravel-Api.png",
       title: "API I-Catat",
       description: "A RESTful API for personal finance management.",
@@ -214,7 +205,7 @@ function Card() {
 
   const [selectedCategory, setSelectedCategory] = useState("all");
   const categories = [
-    { key: "all", label: "Semua" },
+    { key: "all", label: "All" },
     { key: "web", label: "Web" },
     { key: "mobile", label: "Mobile" },
     { key: "api", label: "API" },
